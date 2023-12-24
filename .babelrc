@@ -1,0 +1,25 @@
+{
+    "presets":[
+        "@babel/preset-react"
+    ],
+    "plugins":[
+        [
+            "module-resolver",
+            {
+                "root":["./"],
+                "alias": {
+                    "src":"./src",
+                    "common":"./src/common",
+                    "assets":"./src/assets",
+                    "containers":"./src/containers"
+                }
+            }
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy":true
+            }
+        ]
+    ]
+}
